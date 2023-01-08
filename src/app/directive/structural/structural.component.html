@@ -1,0 +1,12 @@
+<!-- STRUCTURAL DIRECTIVE -->
+
+<!-- ngif -->
+<div *ngIf="showMsg ">show messsage</div>
+<!-- ngif else-->
+<div *ngIf="show; else hide">show if messsage</div>
+<ng-template #hide>else messsage</ng-template>
+<!-- ngif then else-->
+<br>
+<div *ngIf="ifcondition; then elseif; else elsecondition"> </div>
+<ng-template #elseif>if messsage</ng-template>
+<ng-template #elsecondition>else messsage</ng-template>
